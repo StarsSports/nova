@@ -1,1 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NovaStudio | Editor</title>
+    <link rel="stylesheet" href="../shared/ui.css">
+</head>
+<body>
+    <div id="explorer"><div class="header">Explorer</div><div id="obj-tree"></div></div>
+    <div id="viewport">
+        <div id="toolbar">
+            <button class="btn btn-blue" id="addPart">+ Part</button>
+            <button class="btn" id="saveWorld">Publish Game</button>
+        </div>
+    </div>
+    <div id="properties"><div class="header">Properties</div><div id="prop-fields"></div></div>
 
+    <script type="importmap">
+        { "imports": { "three": "https://unpkg.com/three@0.158.0/build/three.module.js", "three/addons/": "https://unpkg.com/three@0.158.0/examples/jsm/" } }
+    </script>
+    <script type="module" src="editor.js"></script>
+</body>
+</html>
